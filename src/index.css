@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --transition-theme: 200ms ease-in-out;
+  }
+
+  .light {
+    --bg-primary: 255 251 247;
+    --bg-secondary: 255 255 255;
+    --bg-tertiary: 249 250 251;
+    --bg-accent: 254 243 235;
+    --bg-hover: 243 244 246;
+
+    --text-primary: 17 24 39;
+    --text-secondary: 55 65 81;
+    --text-tertiary: 107 114 128;
+    --text-muted: 156 163 175;
+
+    --border-primary: 229 231 235;
+    --border-secondary: 243 244 246;
+
+    --orange-50: 255 247 237;
+    --orange-100: 254 243 235;
+    --orange-500: 249 115 22;
+    --orange-600: 234 88 12;
+    --orange-700: 194 65 12;
+
+    --amber-100: 254 243 199;
+    --amber-400: 251 191 36;
+    --amber-700: 180 83 9;
+
+    --emerald-100: 209 250 229;
+    --emerald-700: 4 120 87;
+
+    --red-100: 254 226 226;
+    --red-700: 185 28 28;
+
+    --slate-100: 241 245 249;
+    --slate-700: 51 65 85;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .dark {
+    --bg-primary: 17 24 39;
+    --bg-secondary: 31 41 55;
+    --bg-tertiary: 55 65 81;
+    --bg-accent: 55 48 45;
+    --bg-hover: 75 85 99;
+
+    --text-primary: 249 250 251;
+    --text-secondary: 229 231 235;
+    --text-tertiary: 209 213 219;
+    --text-muted: 156 163 175;
+
+    --border-primary: 55 65 81;
+    --border-secondary: 75 85 99;
+
+    --orange-50: 55 48 45;
+    --orange-100: 67 56 52;
+    --orange-500: 251 146 60;
+    --orange-600: 253 186 116;
+    --orange-700: 254 215 170;
+
+    --amber-100: 67 56 52;
+    --amber-400: 252 211 77;
+    --amber-700: 253 224 71;
+
+    --emerald-100: 6 78 59;
+    --emerald-700: 52 211 153;
+
+    --red-100: 127 29 29;
+    --red-700: 248 113 113;
+
+    --slate-100: 51 65 85;
+    --slate-700: 203 213 225;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+  }
+
+  * {
+    transition: background-color var(--transition-theme),
+                border-color var(--transition-theme),
+                color var(--transition-theme);
+  }
+
+  body {
+    background-color: rgb(var(--bg-primary));
+    color: rgb(var(--text-primary));
+  }
+}
